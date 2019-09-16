@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+}
+
+.show_install {
+	position: relative;
+    background: #EFEFEF;
+    width: 70%;
+    height: auto;
+    left: 15%;
+    text-align: left;
+    word-wrap : break-word; 
+}
+
+.show_install p{
+	position: relative;
+	width: 90%;
+	left: 5%;
+}

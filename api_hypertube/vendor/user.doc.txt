@@ -1,0 +1,11 @@
+<- user ----------------------------------------------------------------------
+La class user permet la recuperation des informations utilisateur 
+de l'API hypertube
+
+login
+nom
+prenom
+language
+image de couverture
+
+---------------------------------------------------------------------- user ->

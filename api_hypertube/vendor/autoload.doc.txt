@@ -1,0 +1,4 @@
+<- autoload ----------------------------------------------------------------------
+La class autoload permet le chargement automatique de l'API hypertube
+
+---------------------------------------------------------------------- autoload ->

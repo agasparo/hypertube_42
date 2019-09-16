@@ -1,0 +1,1 @@
+a:2:{s:9:"film_prod";s:17:"November 28, 1952";s:9:"film_resu";s:194:"On the occasion of a squadra azzura football match, a group of Italians arrive in Paris. Their paths separate at the descent of the train, and all will live surprising moments in the capital ...";}

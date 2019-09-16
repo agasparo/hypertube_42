@@ -1,0 +1,7 @@
+<- connexion ----------------------------------------------------------------------
+La class connexion permet la connexion via l'API 42.
+
+Connexion
+verification du token
+
+---------------------------------------------------------------------- connexion ->

@@ -1,0 +1,1 @@
+a:2:{s:9:"film_prod";s:23:"May 24, 2019 on Netflix";s:9:"film_resu";s:185:"Two young girls in terminal school realize that they should have taken advantage of the "high school years" to have fun and decide to find a boyfriend before the end of the school year.";}

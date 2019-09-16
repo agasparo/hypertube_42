@@ -1,0 +1,5 @@
+<- directory ----------------------------------------------------------------------
+La class directory permet d'empecher l'acces aux dossiers de l'application en 
+renvoyant soit sur une page existante ou 404 not found
+
+---------------------------------------------------------------------- directory ->

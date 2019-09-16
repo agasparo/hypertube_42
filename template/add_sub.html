@@ -1,0 +1,20 @@
+<form method="POST" action="../modules/sub.php" enctype="multipart/form-data" id="subtt">
+	<div class="form-group">
+		<label for="add_subs">{{add_sub}}</label>
+		<input type="file" class="form-control-file" id="add_subs" name="add_subs" aria-describedby="fileHelp" accept=".srt,.vtt">
+		<small id="fileHelp" class="form-text text-muted">{{des_sub}}</small>
+	</div>
+	<div class="form-group">
+      <label for="exampleSelect1">{{nom_du_film}}</label>
+      <select class="form-control" id="exampleSelect1" name="name_val">
+      	{{body_select}}
+      </select>
+    </div>
+	<div class="form-group">
+      <label for="exampleSelect2">{{langue}}</label>
+      <select class="form-control" id="exampleSelect2" name="lang_val">
+      	{{body_select_langue}}
+      </select>
+    </div>
+	<button type="submit" class="btn btn-primary">{{ajouter}}</button>
+</form>

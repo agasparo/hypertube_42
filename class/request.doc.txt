@@ -1,0 +1,4 @@
+<- request ----------------------------------------------------------------------
+La class init_films permet les requete http pour la recuperation des films 
+
+---------------------------------------------------------------------- request ->

@@ -1,0 +1,1 @@
+a:2:{s:9:"film_prod";s:14:"April 24, 2019";s:9:"film_resu";s:209:"Thanos having annihilated half of the universe, the remaining Avengers close the ranks in this twenty-second film of the Marvel Studios, a great conclusion of one of the chapters of the Marvel Cinema Universe.";}

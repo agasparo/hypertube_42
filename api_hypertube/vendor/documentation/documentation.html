@@ -1,0 +1,147 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Installation</h1>
+<p>
+	Pour installer l'api avec vendor</p>
+	<div class="show_install">
+		<p>
+			<br>
+			<font><</font>?php<br><br>
+				&emsp;&emsp;<font color="#B22222">require </font><font color="#B8860B">'vendor/autoload.class.php'</font>;<br><br>
+			?>
+		</p>
+		<br>
+	</div>
+	<h1>Fonctions</h1>
+	<p>Connexion de l'utilisateur</p>
+	<div class="show_install">
+		<p>
+			<br>
+			<font color="#008080">session_start()</font>;<br><br>
+			<font>$redirect_url</font><font color="#B22222"> = </font><font color="#B8860B">'votre_url_de_redirection'</font>;<br>
+			$conexion<font color="#B22222"> = new </font><font color="#008080">Hypertube_connexion</font>();<br><br>
+			<font color="#B22222">if</font> (<font color="#008080">isset</font>($_GET[<font color="#B8860B">'acces_token'</font>]) <font color="#B22222">&&</font> <font color="#B22222">!</font><font color="#008080">empty</font>($_GET[<font color="#B8860B">'acces_token'</font>])) {<br>
+				&emsp;&emsp;$_SESSION[<font color="#B8860B">'acces_token_hypertube'</font>] <font color="#B22222">=</font> $_GET[<font color="#B8860B">'acces_token'</font>]<font color="#B22222">.</font><font color="#B8860B">'||'</font><font color="#B22222">.</font>$_GET[<font color="#B8860B">'pass'</font>];<br>
+			}<br><br>
+			<font color="#B22222">if</font> (<font color="#B22222">!</font><font color="#008080">isset</font>($_SESSION[<font color="#B8860B">'acces_token_hypertube'</font>]) <font color="#B22222">||</font> <font color="#008080">empty</font>($_SESSION[<font color="#B8860B">'acces_token_hypertube'</font>])) {<br>
+				&emsp;&emsp;$url = <font color="#B8860B">'http://192.168.99.100:41062/www/hypertube_42/api/connexion.php?url='</font><font color="#B22222">.</font><font color="#008080">urlencode</font>($redirect_url);<br>
+				&emsp;&emsp;<font color="#008080">echo</font><font color="#B8860B">"</font><<font color="#B22222">a</font> <font color="#1FA055">href</font><font color="#B22222">=</font><font color="#B8860B">'"</font><font color="#B22222">.</font>$url<font color="#B22222">.</font><font color="#B8860B">"'</font>>Se connecter avec Hypertube<<font>/</font><font color="#B22222">a</font>><font color="#B8860B">"</font>;<br>
+			} <font color="#B22222">else</font> { <br>
+				&emsp;&emsp;[suite du code] <br>
+			}
+		</p>
+		<br>
+	</div>
+	<h1>Informations de l'utilisateur</h1>
+	<p>1 - Verification des informations<p>
+	<div class="show_install">
+		<br>
+		<p>
+			$data <font color="#B22222">=</font> $co-><font color="#008080">get_user_data</font>();<br>
+			$check <font color="#B22222">= new</font> <font color="#008080">verif</font>($data);<br><br>
+			<font color="#B22222">if</font> (<font color="#B22222">!</font>$check-><font color="#008080">is_ok</font>())<br>
+				&emsp;&emsp;<font color="#008080">echo</font> $check-><font color="#008080">show_ch</font>();<br>
+			<font color="#B22222">else</font> {<br>
+				&emsp;&emsp;[suite du code]<br>
+			}
+		</p>
+		<br>
+	</div>
+	<p>2 - fonctions pour avoir les infos utilisateurs</p>
+	<p>Valeur de retour : (json)</p>
+	<p>{"response":"code status de retour","infos":"la valeur retournee"}</p>
+	<div class="show_install">
+		<br>
+		<p>
+			$user <font color="#B22222">= new</font> <font color="#008080">user</font>($data);<br><br>
+			$user-><font color="#008080">get_name</font>();&emsp;&emsp;<font color="#BBACAC">// pour avoir le prenom</font><br>
+			$user-><font color="#008080">get_surname</font>();&emsp;&emsp;<font color="#BBACAC">// pour avoir le nom</font><br>
+			$user-><font color="#008080">get_lang</font>();&emsp;&emsp;<font color="#BBACAC">// pour avoir la langue</font><br>
+			$user-><font color="#008080">get_photo</font>();&emsp;&emsp;<font color="#BBACAC">// pour avoir la photo</font><br>
+		</p>
+		<br>
+	</div>
+	<p>3 - update une / des information(s) de l'utilisateur</p>
+	<p>Valeur de retour : (json)</p>
+	<p>{"response":"code status de retour","infos":"la valeur retournee"}</p>
+	<p>
+		La valeur pour $user-><font color="#008080">update_picture</font>(<font color="#B8860B">'nouvelle valeur'</font>); doit toujour etre une url<br>
+	</p>
+	<div class="show_install">
+		<br>
+		<p>
+			$user-><font color="#008080">update_name</font>(<font color="#B8860B">'nouvelle valeur'</font>);&emsp;&emsp;<font color="#BBACAC">// pour mettre a jour le prenom</font><br>
+			$user-><font color="#008080">update_surname</font>(<font color="#B8860B">'nouvelle valeur'</font>);&emsp;&emsp;<font color="#BBACAC">// pour mettre a jour le nom</font><br>
+			$user-><font color="#008080">update_lang</font>(<font color="#B8860B">'nouvelle valeur'</font>);&emsp;&emsp;<font color="#BBACAC">// pour mettre a jour la langue</font><br>
+			$user-><font color="#008080">update_picture</font>(<font color="#B8860B">'nouvelle valeur'</font>);&emsp;&emsp;<font color="#BBACAC">// pour mettre a jour la photo de profil</font><br>
+		</p>
+		<br>
+	</div>
+	<h1>Informations des films</h1>
+	<p>Recuperer tous les films</p>
+	<p>Valeur de retour : (json)</p>
+	<p>{"response":"code status de retour","infos":"la valeur retournee"}<br><br>
+	la valeur retournee sera un tableau json contenant tous les films<br>si pas de films le retour sera : {"response":null,"infos":null}</p>
+	<div class="show_install">
+		<br>
+		<p>
+			$movie <font color="#B22222">= new </font><font color="#008080">movie</font>();<br><br>
+			$movie-><font color="#008080">show_all</font>();
+		</p>
+		<br>
+	</div>
+	<p>Ajouter un film</p>
+	<p>Valeur de retour : (json)</p>
+	<p>{"response":"code status de retour","infos":"la valeur retournee"}</p>
+	<div class="show_install">
+		<br>
+		<p>
+			<font color="#BBACAC">// tableau pour ajouter un film : </font><br>
+			$film[<font color="#B8860B">'name'</font>] <font color="#B22222">=</font> <font color="#B8860B">"titre du film"</font>;<br>
+			$film[<font color="#B8860B">'torrent_url'</font>] <font color="#B22222">=</font> <font color="#B8860B">"url du torrent"</font>;<br>
+			$film[<font color="#B8860B">'picture'</font>] <font color="#B22222">=</font> <font color="#B8860B">"url de l'image de couverture"</font>;<br>
+			$film[<font color="#B8860B">'resumer'</font>] <font color="#B22222">=</font> <font color="#B8860B">"resumer du film"</font>; <br>
+			$film[<font color="#B8860B">'note'</font>] <font color="#B22222">=</font> <font color="#B8860B">"0 -> 10 que des chiffres"</font>;<br>
+			$film[<font color="#B8860B">'nb_vote'</font>] <font color="#B22222">=</font> <font color="#B8860B">"0 -> 1000000 que des chiffres"</font>;<br>
+			$film[<font color="#B8860B">'auteur'</font>] <font color="#B22222">=</font> <font color="#B8860B">"auteur du film"</font>;<br>
+			$film[<font color="#B8860B">'time'</font>] <font color="#B22222">=</font> <font color="#B8860B">"0 -> 300 que des chiffres (en minutes)"</font>;<br>
+			$film[<font color="#B8860B">'production date'</font>] <font color="#B22222">= </font><font color="#B8860B">"date de production"</font>;<br>
+			$film[<font color="#B8860B">'casting'</font>] <font color="#B22222">=</font> <font color="#B8860B">"les acteurs du film"</font>;<br><br>
+				$movie-><font color="#008080">add</font>($film);
+			<br><br>
+			<font color="red">!!! Respectez bien les clefs du tableau ainsi que sa taille. Il ne doit pas avoir d'elements vide. !!!</font>
+		</p>
+		<br>
+	</div>
+	<p>Supprimer un film</p>
+	<p>Valeur de retour : (json)</p>
+	<p>{"response":"code status de retour","infos":"la valeur retournee"}</p>
+	<div class="show_install">
+		<br>
+		<p>
+			<font color="#BBACAC">// $user correspond a la variable declarer dans information de l'utilisateur</font><br>
+			$movie-><font color="#008080">delete</font>(<font color="#B8860B">'id du film a supprimer'</font>, $user);
+		</p>
+		<br>
+	</div>
+	<h1>code status de retour</h1>
+	<div class="show_install">
+		<br>
+		<p>
+			- 200 --> Data update success<br>
+			- 201 --> Data insert success<br>
+			- 202 --> Data erase success<br>
+			- 304 --> Data not modified<br>
+			- 400 --> Bad request error in request<br>
+			- 401 --> Unauthorized identification fail<br>
+			- 403 --> Forbidden access restricted<br>
+		</p>
+		<br>
+	</div>
+</body>
+</html>

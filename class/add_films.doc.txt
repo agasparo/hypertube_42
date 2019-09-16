@@ -1,0 +1,11 @@
+<- add_films ----------------------------------------------------------------------
+La class add_films permet la gestion des films.
+
+Ajout
+Tri
+Doublon
+classement
+play
+exist
+
+---------------------------------------------------------------------- add_films ->

@@ -1,0 +1,5 @@
+<- crypt ----------------------------------------------------------------------
+La class crypt permet le cryptage de certaines data.
+
+Elle permet de crypter les mots de passes
+---------------------------------------------------------------------- crypt ->

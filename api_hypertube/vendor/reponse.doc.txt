@@ -1,0 +1,5 @@
+<- reponse ----------------------------------------------------------------------
+La class reponse permet l'affichage de differents message a destination 
+de l'utilisateur
+
+---------------------------------------------------------------------- reponse ->

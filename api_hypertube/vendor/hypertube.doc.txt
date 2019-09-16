@@ -1,0 +1,4 @@
+<- hypertube ----------------------------------------------------------------------
+La class hypertube permet la verfication du token de l'API hypertube
+
+---------------------------------------------------------------------- hypertube ->

@@ -1,0 +1,7 @@
+<?php 
+require '../class/stream.class.php';
+$path = "{{path}}";
+$buff = {{buff}};
+$film = new VideoStream($path, $buff);
+$film->start();
+?>

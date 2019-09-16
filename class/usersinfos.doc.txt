@@ -1,0 +1,15 @@
+<- usersinfos ----------------------------------------------------------------------
+La class usersinfos permet la recuperation et l'affichage
+ des informations utilisateurs
+
+ id
+ nom prenom
+ pseudo
+ language
+ sous titres ajoutés
+ historique sous titres
+ image de couverture
+ recompense
+ films vus
+
+---------------------------------------------------------------------- usersinfos ->

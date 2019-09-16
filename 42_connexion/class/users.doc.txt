@@ -1,0 +1,12 @@
+<- users ----------------------------------------------------------------------
+La class users permet la recuperation des informations utilisateurs 
+sur l'API 42
+
+login
+nom
+prenom
+mail
+language
+image de couverture
+
+---------------------------------------------------------------------- users ->

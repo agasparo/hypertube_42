@@ -1,0 +1,8 @@
+<- trad ----------------------------------------------------------------------
+La class trad permet d'effectuer les traductions
+
+ensemble du site
+infos des films
+recompenses
+
+---------------------------------------------------------------------- trad ->

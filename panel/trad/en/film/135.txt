@@ -1,0 +1,1 @@
+a:2:{s:9:"film_prod";s:17:"December 25, 2019";s:9:"film_resu";s:186:"A gang leader in search of redemption and a prostitute eager to regain his freedom find themselves at the heart of a manhunt. Together, they decide to play one last time with their fate.";}

@@ -1,0 +1,15 @@
+<- films ----------------------------------------------------------------------
+La class films permet de recuperer les infos concernant les films.
+
+nom
+image de couverture
+resumer
+realisateur
+casting
+date de production
+durée
+note
+nombre de vote
+etat du telechergement
+lien torrent
+---------------------------------------------------------------------- films ->

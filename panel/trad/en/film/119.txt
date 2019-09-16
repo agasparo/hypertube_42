@@ -1,0 +1,1 @@
+a:2:{s:9:"film_prod";s:15:"January 8, 2020";s:9:"film_resu";s:276:"While he is only the shadow of the warrior he was in Indochina, Colonel Paul Andreas Breitner is forced to cross a Algeria at war, in search of his former senior officer: Colonel Simon Delignières, missing in the Aurès Nemencha, a real powder keg in the hands of the rebels.";}

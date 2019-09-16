@@ -1,0 +1,3 @@
+<- http_request ----------------------------------------------------------------------
+La class http_request permet permet les requettes POST a l'API hypertube
+---------------------------------------------------------------------- http_request ->

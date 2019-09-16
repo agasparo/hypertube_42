@@ -1,0 +1,1 @@
+a:2:{s:9:"film_prod";s:17:"September 3, 1975";s:9:"film_resu";s:239:"Chronicle of a family of Spanish immigrants whose father, in the 1930s, arrives with his sons to build a large factory in a small town in the southwest. A laundress enters the household and gradually becomes the real head of the family ...";}

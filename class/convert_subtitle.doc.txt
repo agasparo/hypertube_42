@@ -1,0 +1,5 @@
+<- convert_subtitle ----------------------------------------------------------------------
+La class convert_subtitle permet la getion des sous-titres.
+
+Elle permet la conversion des sous-titres
+---------------------------------------------------------------------- convert_subtitle ->

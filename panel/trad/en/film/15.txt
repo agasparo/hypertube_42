@@ -1,0 +1,1 @@
+a:2:{s:9:"film_prod";s:12:"May 22, 2019";s:9:"film_resu";s:287:"John Wick transgressed a fundamental rule: he killed inside the Continental Hotel itself. "Excommunicated", all the services related to the Continental are closed to him and his head put on price. John finds himself without support, hunted by all the most dangerous killers in the world.";}

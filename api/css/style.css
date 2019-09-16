@@ -1,0 +1,25 @@
+body {
+	
+	background-color: #F5F5F5;
+}
+
+#form_post {
+
+	position: fixed;
+	background-color: #FFF;
+	width: 50%;
+	height: auto;
+	top: 25%;
+	left: 25%;
+	border: 1px solid #DCDCDC;
+	border-radius: 5px;
+	text-align: center;
+	overflow-y: auto;
+}
+
+.form_api {
+
+	position: relative;
+	width: 90%;
+	left: 5%;
+}

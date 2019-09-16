@@ -1,0 +1,7 @@
+<- add_films ----------------------------------------------------------------------
+La class bdd permet l'ajout a la base de donnée des utilisteur de l'API 42.
+
+Ajout
+verification si l'utilisateur a deja ete connecté une fois
+
+---------------------------------------------------------------------- add_films ->
