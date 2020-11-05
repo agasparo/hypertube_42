@@ -1,6 +1,6 @@
 Liste des bonnus : 
 
-- API resfull
+- API restfull
 - picture-in-picture
 - 404 not found (jeux)
 - reporter lien mort
